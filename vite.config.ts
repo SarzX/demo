@@ -5,12 +5,13 @@ import {defineConfig} from 'vite';
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/demo/',
+
   // остальные ваши настройки...
 })
 
 export default defineConfig(() => {
   return {
+       base: '/demo/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
